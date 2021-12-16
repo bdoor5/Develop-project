@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Rakkas&display=swap');
+
+/************************ Navbar ***********************************/
+
+
+nav{
+    display:flex;
+    padding:15px 80px  15px 10px; 
+    justify-content: space-between ;
+    background-color: rgb(255, 255, 255);
+    border-bottom: blue;
+ 
+}
+.nav-links{
+    
+    display: flex;
+    list-style:none;
+    gap: 30px;
+    padding-right: 30px ;
+    width: 100px;
+    justify-content: space-evenly;
+    white-space: nowrap;
+   
+}
+.nav-links li a{
+    text-decoration: none;
+    color: #0c1753;
+    justify-content:right ;
+    font-family: 'Rakkas', cursive;
+    font-size: 15px;
+}
+nav img{
+    width: 100px;
+
+}
+
+
+
+ 
