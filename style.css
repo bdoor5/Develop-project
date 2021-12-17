@@ -19,7 +19,7 @@ nav{
     
     display: flex;
     list-style:none;
-    gap: 30px;
+    gap: 20px;
     padding-right: 30px ;
     width: 100px;
     justify-content: space-evenly;
@@ -37,11 +37,9 @@ nav img{
     width: 100px;
 }
 /************************ Header ***********************************/
-
- 
- 
  main {
      display: flex;
+     flex-wrap: wrap;
      background: linear-gradient(#777CA1,#BDADFB);
      height:calc(100vh - 100px) ;
      justify-content: center;
@@ -49,6 +47,7 @@ nav img{
      color: white;
  }
  main img{
+      position: relative;
      max-width: 600px;
      height: auto;
  }
@@ -76,12 +75,69 @@ nav img{
     width: 40%;
     justify-content: space-around;
 }
-    @media only screen and (max-width: 600px){
+    @media screen and (max-width: 600px){
     
         .main img{
                 flex-direction:column;
             }
        
     }
+/************************ services title ***********************************/
 
- 
+.services-title{
+    display: flex;
+    position: relative;
+    background:white;
+    color: #00a69c;
+    height:calc(10vh - 10px);
+    padding: 60px;
+    justify-content: center;
+    font-size: 25px;
+    /* margin: 0; */
+    padding: 1rem;
+    margin:30px ;
+    margin-bottom:40px;
+    padding-bottom: 100px;
+   
+}
+/************************ services ***********************************/
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(244, 238, 247);
+    align-items: center;
+}
+.container .box {
+   position: relative; 
+    width: 250px;
+    padding: 40px;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    border-radius: 5px;
+    margin: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    align-items: center;
+    
+}
+
+.container .box img {
+    position: relative;
+    width: 80px;
+    height:80px ;
+    background:  #ffe101;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 90px;
+    margin: 0 auto;
+}
+.container .box h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
