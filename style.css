@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Rakkas&display=swap');
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 /************************ Navbar ***********************************/
 
 
@@ -31,9 +35,53 @@ nav{
 }
 nav img{
     width: 100px;
-
 }
+/************************ Header ***********************************/
 
-
+ 
+ 
+ main {
+     display: flex;
+     background: linear-gradient(#777CA1,#BDADFB);
+     height:calc(100vh - 100px) ;
+     justify-content: center;
+     align-items: center;
+     color: white;
+ }
+ main img{
+     max-width: 600px;
+     height: auto;
+ }
+ .content-left{
+     width: 30%;
+ }
+ main h2{
+     font-size: 50px;
+ }
+ main p{
+     font-size: 14px;
+     font-weight: 400px;
+ }
+ .btn{
+    position: absolute;
+    background-color: #ffe101;
+    color: #00a69c;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 6px 18px;
+    width: 8em;
+    height: 2em;
+}
+.content-right{
+    width: 40%;
+    justify-content: space-around;
+}
+    @media only screen and (max-width: 600px){
+    
+        .main img{
+                flex-direction:column;
+            }
+       
+    }
 
  
